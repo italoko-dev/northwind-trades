@@ -10,8 +10,8 @@ models:
           - not_null
           - unique
 
-      - name: company_name
+      - name: shipper_company_name
         description: Name of the shipper
 
-      - name: phone
+      - name: shipper_phone
         description: Phone number of the shipper

@@ -25,16 +25,16 @@ models:
   dbt_northwind_trades:
   
     staging:
+      +tags: ['stg', 'stage', 'staging']
       erp_northwind_trades:
         +tags: ['stg_erp_northwind_trades']
         +materialized: view
-        +schema: staging
+        +schema: stg
     
-    mart:
-      erp_northwind_trades:
-        +tags: ['mart_erp_northwind_trades']
-        +materialized: table
-        +schema: mart
+    marts:
+      +tags: ['mart', 'marts']
+      +materialized: table
+      +schema: marts
 
 ### Tests Configuration 
 data_tests:

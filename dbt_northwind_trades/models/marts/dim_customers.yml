@@ -1,19 +1,22 @@
 version: 2
 
 models:
-  - name: stg_customers
-    description: Staging table - Customers of the Northwind company
+  - name: dim_customer
+    description: Dimension table - Customers of the Northwind company
     columns:
-      - name: customer_id
-        description: Primary key for customer table
+      - name: customer_sk
+        description: Surrogate key for Dimension Customers table
         tests:
           - not_null
           - unique
 
-      - name: customer_company_name 
+      - name: customer_id
+        description: Natural Primary key for Customer table
+
+      - name: customer_company_name
         description: Name of the customer
 
-      - name: customer_contact_name 
+      - name: customer_contact_name
         description: Contact name of the customer
 
       - name: customer_contact_title
