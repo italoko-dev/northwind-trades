@@ -10,7 +10,7 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+clean-targets:
   - "target"
   - "dbt_packages"
 
@@ -23,15 +23,20 @@ seeds:
 ### Models configuration ###
 models:
   dbt_northwind_trades:
+  
     staging:
-      +materialized: view
-      +schema: staging
+      erp_northwind_trades:
+        +tags: ['stg_erp_northwind_trades']
+        +materialized: view
+        +schema: staging
     
     mart:
-      +materialized: table
-      +schema: mart
+      erp_northwind_trades:
+        +tags: ['mart_erp_northwind_trades']
+        +materialized: table
+        +schema: mart
 
 ### Tests Configuration 
-tests:
+data_tests:
   dbt_northwind_trades:
     +severity: warn

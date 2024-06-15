@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: erp_northwind_trades
+    description: Relational database ERP Northwind Trades company  
+    database: dw_northwind_trades
+    schema: src_erp_northwind_trades
+
+    tags:
+      - 'erp_northwind_trades'
+
+    tables:
+      - name: categories
+        description: to-do
+
+      - name: customer_customer_demo
+        description: to-do
+
+      - name: customer_demographics
+        description: to-do
+
+      - name: customers
+        description: to-do
+
+      - name: employee_territories
+        description: to-do
+
+      - name: employees
+        description: to-do
+
+      - name: order_details
+        description: to-do
+
+      - name: orders
+        description: to-do
+
+      - name: products
+        description: to-do
+
+      - name: region
+        description: to-do
+
+      - name: shippers
+        description: to-do
+
+      - name: suppliers
+        description: to-do
+
+      - name: territories
+        description: to-do
+
+      - name: us_states
+        description: to-do
