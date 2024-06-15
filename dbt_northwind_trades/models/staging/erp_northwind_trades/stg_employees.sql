@@ -6,8 +6,8 @@ with
             , cast(last_name as varchar) as employee_last_name
             , cast(first_name as varchar) as employee_first_name
             , cast(title as varchar) as employee_title
-            , cast(
-                title_of_courtesy || first_name || ' ' || last_name as varchar
+            , cast(title_of_courtesy || ' ' || first_name || ' ' || last_name 
+                as varchar
             ) as employee_full_name
             , cast(birth_date as date) as employee_birth_date
             , cast(hire_date as date) as employee_hire_date
