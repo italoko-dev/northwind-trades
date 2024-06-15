@@ -13,8 +13,8 @@ models:
       - name: category_name
         description: Name of the category
 
-      - name: description
+      - name: category_description
         description: Description of the category
 
-      - name: picture
+      - name: category_picture
         description: Picture of the category

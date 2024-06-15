@@ -10,35 +10,35 @@ models:
           - not_null
           - unique
 
-      - name: supplier_name
+      - name: supplier_company_name
         description: Name of the supplier
 
-      - name: contact_name  
+      - name: supplier_contact_name  
         description: Contact name of the supplier
 
-      - name: contact_title
+      - name: supplier_contact_title
         description: Contact title of the supplier
 
-      - name: address 
+      - name: supplier_address 
         description: Address of the supplier
 
-      - name: city  
+      - name: supplier_city  
         description: City of the supplier
 
-      - name: region
+      - name: supplier_region
         description: Region of the supplier
 
-      - name: postal_code
+      - name: supplier_postal_code
         description: Postal code of the supplier
 
-      - name: country
+      - name: supplier_country
         description: Country of the supplier
 
-      - name: phone
+      - name: supplier_phone
         description: Phone number of the supplier
 
-      - name: fax
+      - name: supplier_fax
         description: Fax number of the supplier
 
-      - name: home_page
+      - name: supplier_home_page
         description: Homepage of the supplier
