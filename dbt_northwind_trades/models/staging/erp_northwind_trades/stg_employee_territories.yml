@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_employee_territories
+    description: Staging table - Employees territories of the Northwind company
+    columns:
+      - name: employee_id
+        description: Foreign key for Employee table
+        tests:
+          - not_null
+
+      - name: territory_id
+        description: Foreign key for Territory table
+        tests:
+          - not_null

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_shippers
+    description: Staging table - Shippers of the Northwind company
+    columns:
+      - name: shipper_id
+        description: Primary key for shipper table
+        tests:
+          - not_null
+          - unique
+
+      - name: company_name
+        description: Name of the shipper
+
+      - name: phone
+        description: Phone number of the shipper

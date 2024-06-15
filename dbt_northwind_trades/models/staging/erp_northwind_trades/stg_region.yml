@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_region
+    description: Staging table - Regions of the United States
+    columns:
+      - name: region_id
+        description: Primary key for region table
+        tests:
+          - not_null
+          - unique
+
+      - name: region_description
+        description: Description of the region

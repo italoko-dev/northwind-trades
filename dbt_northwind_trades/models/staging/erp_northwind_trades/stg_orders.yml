@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: Staging table - Orders of the Northwind company
+    columns:
+      - name: order_id
+        description: Primary key for order table
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Foreign key for Customer
+        tests:
+          - not_null
+
+      - name: employee_id
+        description: Foreign key for Employee
+        tests:
+          - not_null
+
+      - name: shipper_id
+        description: Foreign key for Shipper of the order
+        tests:
+          - not_null
+
+      - name: order_date
+        description: Date of the order
+
+      - name: required_date
+        description: Date when the order is required
+
+      - name: shipped_date
+        description: Date when the order was shipped
+
+      - name: freight
+        description: Freight of the order
+
+      - name: ship_name
+        description: Name of the shipper
+
+      - name: ship_address  
+        description: Address of the shipper
+
+      - name: ship_city
+        description: City of the shipper
+
+      - name: ship_region
+        description: Region of the shipper
+
+      - name: ship_postal_code
+        description: Postal code of the shipper
+
+      - name: ship_country
+        description: Country of the shipper

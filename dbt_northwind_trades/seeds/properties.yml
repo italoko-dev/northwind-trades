@@ -1,0 +1,7 @@
+version: 2
+
+seeds:
+  - name: us_states
+    config:
+      delimiter: ";"
+      full_refresh: true

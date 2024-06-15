@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Staging table - Customers of the Northwind company
+    columns:
+      - name: customer_id
+        description: Primary key for customer table
+        tests:
+          - not_null
+          - unique
+
+      - name: company_name 
+        description: Name of the customer
+
+      - name: contact_name 
+        description: Contact name of the customer
+
+      - name: contact_title
+        description: Contact title of the customer
+
+      - name: address
+        description: Address of the customer
+
+      - name: city
+        description: City of the customer
+
+      - name: region
+        description: Region of the customer
+
+      - name: postal_code
+        description: Postal code of the customer
+
+      - name: country
+        description: Country of the customer
+
+      - name: phone
+        description: Phone number of the customer
+
+      - name: fax
+        description: Fax number of the customer

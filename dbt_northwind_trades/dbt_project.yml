@@ -1,0 +1,42 @@
+name: 'dbt_northwind_trades'
+version: '1.0.0'
+
+profile: 'dbt_northwind_trades'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+### Seeds configuration ###
+
+seeds:
+  dbt_northwind_trades:
+    +schema: seed
+
+### Models configuration ###
+models:
+  dbt_northwind_trades:
+  
+    staging:
+      erp_northwind_trades:
+        +tags: ['stg_erp_northwind_trades']
+        +materialized: view
+        +schema: staging
+    
+    mart:
+      erp_northwind_trades:
+        +tags: ['mart_erp_northwind_trades']
+        +materialized: table
+        +schema: mart
+
+### Tests Configuration 
+data_tests:
+  dbt_northwind_trades:
+    +severity: warn

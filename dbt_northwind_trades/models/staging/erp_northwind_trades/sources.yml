@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: erp_northwind_trades
+    description: Relational database ERP Northwind Trades company  
+    database: dw_northwind_trades
+    schema: src_erp_northwind_trades
+
+    tags:
+      - 'erp_northwind_trades'
+
+    tables:
+      - name: categories
+        description: Source table - Product categories of the Northwind company
+
+      - name: customer_customer_demo
+        description: Source table - Customer customer demos of the Northwind company
+
+      - name: customer_demographics
+        description: Source table - Customer demographics of the Northwind company
+
+      - name: customers
+        description: Source table - Customers of the Northwind company
+
+      - name: employee_territories
+        description: Source table - Employee territories of the Northwind company
+
+      - name: employees
+        description: Source table - Employees of the Northwind company
+
+      - name: order_details
+        description: Source table - Order details of the Northwind company
+
+      - name: orders
+        description: Source table - Orders of the Northwind company
+
+      - name: products
+        description: Source table - Products of the Northwind company
+
+      - name: region
+        description: Source table - Region of the Northwind company
+
+      - name: shippers
+        description: Source table - Shippers of the Northwind company
+
+      - name: suppliers
+        description: Source table - Suppliers of the Northwind company
+
+      - name: territories
+        description: Source table - Territories of the Northwind company
+
+      - name: us_states
+        description: Source table - United States states of the Northwind company

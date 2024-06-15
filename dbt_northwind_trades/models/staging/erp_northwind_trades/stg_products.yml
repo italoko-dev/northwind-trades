@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: Staging table - Products of the Northwind company
+    columns:
+      - name: product_id
+        description: Primary key for product table
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: Name of the product
+
+      - name: supplier_id
+        description: Foreign key for Supplier table
+        tests:
+          - not_null
+
+      - name: category_id
+        description: Foreign key for Category table
+        tests:
+          - not_null
+
+      - name: quantity_per_unit
+        description: Quantity per unit of the product
+
+      - name: unit_price
+        description: Unit price of the product
+
+      - name: units_in_stock
+        description: Units in stock of the product
+
+      - name: units_on_order
+        description: Units on order of the product
+
+      - name: reorder_level
+        description: Reorder level of the product
+
+      - name: is_discontinued
+        description: Discontinued status of the product
