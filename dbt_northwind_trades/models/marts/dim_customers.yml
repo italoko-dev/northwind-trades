@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Dimension table - Customers of the Northwind company
+    columns:
+      - name: customer_sk
+        description: Surrogate key for Dimension Customers table
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: Natural Primary key for Customer table
+
+      - name: customer_company_name
+        description: Name of the customer
+
+      - name: customer_contact_name
+        description: Contact name of the customer
+
+      - name: customer_contact_title
+        description: Contact title of the customer
+
+      - name: customer_address
+        description: Address of the customer
+
+      - name: customer_city
+        description: City of the customer
+
+      - name: customer_region
+        description: Region of the customer
+
+      - name: customer_postal_code
+        description: Postal code of the customer
+
+      - name: customer_country
+        description: Country of the customer
+
+      - name: customer_phone
+        description: Phone number of the customer
+
+      - name: customer_fax
+        description: Fax number of the customer
