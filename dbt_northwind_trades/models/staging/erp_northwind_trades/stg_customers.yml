@@ -10,32 +10,32 @@ models:
           - not_null
           - unique
 
-      - name: company_name 
+      - name: customer_company_name 
         description: Name of the customer
 
-      - name: contact_name 
+      - name: customer_contact_name 
         description: Contact name of the customer
 
-      - name: contact_title
+      - name: customer_contact_title
         description: Contact title of the customer
 
-      - name: address
+      - name: customer_address
         description: Address of the customer
 
-      - name: city
+      - name: customer_city
         description: City of the customer
 
-      - name: region
+      - name: customer_region
         description: Region of the customer
 
-      - name: postal_code
+      - name: customer_postal_code
         description: Postal code of the customer
 
-      - name: country
+      - name: customer_country
         description: Country of the customer
 
-      - name: phone
+      - name: customer_phone
         description: Phone number of the customer
 
-      - name: fax
+      - name: customer_fax
         description: Fax number of the customer
