@@ -14,7 +14,24 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+### Seeds configuration ###
+
+seeds:
+  dbt_northwind_trades:
+    +schema: seed
+
+### Models configuration ###
 models:
   dbt_northwind_trades:
-    example:
+    staging:
       +materialized: view
+      +schema: staging
+    
+    mart:
+      +materialized: table
+      +schema: mart
+
+### Tests Configuration 
+tests:
+  dbt_northwind_trades:
+    +severity: warn
