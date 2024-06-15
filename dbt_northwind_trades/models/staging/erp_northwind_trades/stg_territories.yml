@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_territories
+    description: Staging table - Territories of the United States
+    columns:
+      - name: territory_id
+        description: Primary key for territory table
+        tests:
+          - not_null
+          - unique
+
+      - name: territory_name
+        description: Name of the territory
+
+      - name: region_id
+        description: Region of the territory

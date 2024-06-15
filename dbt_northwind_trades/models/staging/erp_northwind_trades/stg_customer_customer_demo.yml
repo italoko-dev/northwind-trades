@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_customer_customer_demo
+    description: Staging table - customer demographics of the Northwind company
+    columns:
+      - name: customer_type_id
+        description: Foreign key for customer type table
+        tests:
+          - not_null
+
+      - name: customer_id
+        description: Foreign key for Customer table
+        tests:
+          - not_null

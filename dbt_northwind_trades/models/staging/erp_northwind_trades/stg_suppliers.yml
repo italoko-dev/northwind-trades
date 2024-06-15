@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_suppliers
+    description: Staging table - Suppliers of the Northwind company
+    columns:
+      - name: supplier_id
+        description: Primary key for supplier table
+        tests:
+          - not_null
+          - unique
+
+      - name: supplier_name
+        description: Name of the supplier
+
+      - name: contact_name  
+        description: Contact name of the supplier
+
+      - name: contact_title
+        description: Contact title of the supplier
+
+      - name: address 
+        description: Address of the supplier
+
+      - name: city  
+        description: City of the supplier
+
+      - name: region
+        description: Region of the supplier
+
+      - name: postal_code
+        description: Postal code of the supplier
+
+      - name: country
+        description: Country of the supplier
+
+      - name: phone
+        description: Phone number of the supplier
+
+      - name: fax
+        description: Fax number of the supplier
+
+      - name: home_page
+        description: Homepage of the supplier
