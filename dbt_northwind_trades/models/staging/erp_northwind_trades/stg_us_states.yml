@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_us_states
+    description: Staging table - States of the United States
+    columns:
+      - name: state_id
+        description: Primary key for US state table
+        tests:
+          - not_null
+          - unique
+
+      - name: state_name
+        description: Name of the state
+
+      - name: state_abbr
+        description: Abbreviation of the state name
+
+      - name: state_region
+        description: Region of the state

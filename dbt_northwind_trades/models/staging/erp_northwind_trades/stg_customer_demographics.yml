@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_customer_demographics
+    description: Staging table - Customer demographics of the Northwind company
+    columns:
+      - name: customer_type_id
+        description: Primary key for customer type table
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_desc
+        description: Description of the customer
