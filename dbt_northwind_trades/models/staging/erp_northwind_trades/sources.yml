@@ -11,43 +11,43 @@ sources:
 
     tables:
       - name: categories
-        description: to-do
+        description: Source table - Product categories of the Northwind company
 
       - name: customer_customer_demo
-        description: to-do
+        description: Source table - Customer customer demos of the Northwind company
 
       - name: customer_demographics
-        description: to-do
+        description: Source table - Customer demographics of the Northwind company
 
       - name: customers
-        description: to-do
+        description: Source table - Customers of the Northwind company
 
       - name: employee_territories
-        description: to-do
+        description: Source table - Employee territories of the Northwind company
 
       - name: employees
-        description: to-do
+        description: Source table - Employees of the Northwind company
 
       - name: order_details
-        description: to-do
+        description: Source table - Order details of the Northwind company
 
       - name: orders
-        description: to-do
+        description: Source table - Orders of the Northwind company
 
       - name: products
-        description: to-do
+        description: Source table - Products of the Northwind company
 
       - name: region
-        description: to-do
+        description: Source table - Region of the Northwind company
 
       - name: shippers
-        description: to-do
+        description: Source table - Shippers of the Northwind company
 
       - name: suppliers
-        description: to-do
+        description: Source table - Suppliers of the Northwind company
 
       - name: territories
-        description: to-do
+        description: Source table - Territories of the Northwind company
 
       - name: us_states
-        description: to-do
+        description: Source table - United States states of the Northwind company
