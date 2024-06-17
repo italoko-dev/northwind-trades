@@ -5,9 +5,9 @@ with
             , cast(customer_id as varchar) as customer_id
             , cast(employee_id as int) as employee_id
             , cast(ship_via as int) as shipper_id
-            , cast(order_date as date) as order_date
-            , cast(required_date as date) as required_date
-            , cast(shipped_date as date) as shipped_date
+            , cast(order_date as varchar) as order_date
+            , cast(required_date as varchar) as required_date
+            , cast(shipped_date as varchar) as shipped_date
             , cast(freight as decimal) as freight
             , cast(ship_name as varchar) as ship_name
             , cast(ship_address as varchar) as ship_address

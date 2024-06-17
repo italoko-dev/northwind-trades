@@ -1,0 +1,43 @@
+
+Top 10:
+- produtos mais vendidos
+- produto com maior receita 
+- vendedores com maior receita de venda
+- vendedores com maior quantidade de vendas
+- categoria
+
+Temos produtos descontinuados em estoque?
+De quem é o fornecedor com mais produtos descontinuados?
+De qual categoria tem mais produtos descontinuados?
+
+Distribuição de vendas por região, cidade, e menor grão possível
+Quais fornecedores representam maior parte das vendas dos produtos e receita?
+
+Quais clientes necessitam de atenção ? ( estão sem comprar )
+- fatiar em um 3 pedaços de data 
+
+Conceito de 80/20 em cima dos clientes 
+
+Analisar: se para o mesmo produto e mesmo endereço de ordems existem entregas 
+de diferentes shippers e ver se tem relação com clientes chunks 
+
+min, Media, max  de idade dos funcionarios
+
+quanto tempo cada produto fica em estoque?
+
+
+Montar o relatorio pdf falando de cada setor por ex
+- Indicadores de dashboard 
+- Explicar 
+- recomendar 
+
+Conheça seus employees.....
+
+fornecedores
+
+Clientes
+
+produtos
+
+
+

@@ -14,7 +14,7 @@ models:
         tests:
           - not_null
 
-      - name: unit_price
+      - name: order_unit_price
         description: Unit price of the product
 
       - name: quantity
