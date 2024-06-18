@@ -10,6 +10,7 @@ with
             , orders.order_date
             , dim_date.order_date_year
             , dim_date.order_date_month
+            , dim_date.order_date_year_month
             , dim_date.order_date_day
 
             , orders.required_date
@@ -20,7 +21,7 @@ with
             , orders.ship_region
             , orders.ship_postal_code
             , orders.ship_country
-            
+
             , order_details.order_unit_price
             , order_details.quantity
             , order_details.discount
