@@ -7,7 +7,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') >= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '02 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '03 month')
                 from {{ ref('fact_order_details') }}
             )
     )
@@ -19,7 +19,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') <= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '02 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '03 month')
                 from {{ ref('fact_order_details') }}
             )
     )
@@ -50,7 +50,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') >= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '05 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '06 month')
                 from {{ ref('fact_order_details') }}
             )
     )
@@ -62,7 +62,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') <= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '05 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '06 month')
                 from {{ ref('fact_order_details') }}
             )
     )
@@ -93,7 +93,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') >= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '11 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '12 month')
                 from {{ ref('fact_order_details') }}
             )
     )
@@ -105,7 +105,7 @@ with
         from {{ ref('fact_order_details') }}
         where
             to_date(order_date, 'YYYY-MM-DD') <= (
-                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '11 month')
+                select date(to_date(max(order_date), 'YYYY-MM-DD') - interval '12 month')
                 from {{ ref('fact_order_details') }}
             )
     )
