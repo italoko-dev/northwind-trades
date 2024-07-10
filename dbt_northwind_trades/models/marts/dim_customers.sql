@@ -42,7 +42,7 @@ with
             md5(
                 cast(customer_id as varchar)
                 || cast(customer_type_id as varchar)
-            ) as employee_sk
+            ) as customer_sk
             , *
         from stg_customers
     )

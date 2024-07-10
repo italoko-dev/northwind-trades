@@ -1,26 +1,5 @@
 with
-    territories as (
-        select
-            territories.territory_id
-            , territories.territory_description
-            , territories.region_id
-
-            , region.region_description
-        from {{ ref('stg_territories') }} as territories
-        left join {{ ref('stg_region') }} as region
-            on territories.region_id = region.region_id
-    )
-
-    , employee_territories as (
-        select 
-            emp_territory.employee_id
-            , territories.*
-        from {{ ref('stg_employee_territories') }} as emp_territory
-        left join territories
-            on emp_territory.territory_id = territories.territory_id
-    )
-
-    , stg_employees as (
+    stg_employees as (
         select 
             employee.employee_id
             , employee.employee_title_of_courtesy
@@ -42,11 +21,6 @@ with
             , employee.employee_postal_code
             , employee.employee_country
 
-            , emp_territories.territory_id
-            , emp_territories.territory_description
-            , emp_territories.region_id
-            , emp_territories.region_description
-
             , employee.employee_home_phone
             , employee.employee_extension
             , employee.employee_photo
@@ -59,17 +33,11 @@ with
         from {{ ref('stg_employees') }} as employee
         left join {{ ref('stg_employees') }} as employee_report_to
             on employee.employee_reports_to = employee_report_to.employee_id
-        left join employee_territories as emp_territories
-            on employee.employee_id = emp_territories.employee_id
     )
 
     , dim_employees_create_sk as (
         select 
-            md5(
-                cast(employee_id as varchar)
-                || cast(territory_id as varchar)
-                || cast(region_id as varchar)
-            ) as employee_sk
+            md5(cast(employee_id || employee_full_name as varchar)) as employee_sk
             , *
         from stg_employees
     )

@@ -51,18 +51,6 @@ models:
 
       - name: employee_country
         description: Country of the employee
-
-      - name: territory_id
-        description: Natural Foreign key for Employee table
-      
-      - name: territory_description
-        description: Description of the employee
-      
-      - name: region_id
-        description: Natural Foreign key for Region the employee
-
-      - name: region_description
-        description: Region description of the employee
       
       - name: employee_home_phone
         description: Home phone of the employee

@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: dim_shippers
+    description: Dimension table - Shippers of the Northwind company
+    columns:
+      - name: shipper_sk
+        description: Surrogate key for Dimension Shippers table
+        tests:
+          - not_null
+          - unique
+      
+      - name: shipper_id
+        description: Natural Primary key for Shipper table
+
+      - name: shipper_company_name
+        description: Name of the shipper
+
+      - name: shipper_phone
+        description: Phone number of the shipper
+        
